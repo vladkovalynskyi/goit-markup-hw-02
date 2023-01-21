@@ -95,17 +95,26 @@ li {
     border:none; 
 }
 .button-text:hover, .button-text:focus {
-    background-color: var(--iris-color);
+    background-color: var(--ocean-color);
     
 }
+.buttons {
+    color: var(--iris-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--cornflower-color);
+    border-radius: 4px;
+    background-color: var(--cloud-color);
+}
+.buttons:hover, :focus {
+    color: #FFF;
+    background-color: var(--ocean-color);
+}
 .cards-team {
-    width: 264px;
-    height: 428;
     background-color: #FFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.88),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
 .card-items {
