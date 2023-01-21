@@ -1,10 +1,19 @@
+:root {
+    --iris-color: #4D5AE5;
+    --ocean-color: #404BBF;
+    --navy-blue-color: #2E2F42;
+    --green-color: #31D0AA;
+    --slate-color: #2E2F42;
+    --light-slate-color: #8E8F99;
+    --cornflower-color: #E7E9FC;
+    --cloud-color: #F4F4FD;
+    --navy-blue-modal-color: #2E2F4266;
+    --gray-color: #2E2F42B2;
+}
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--navy-blue-color);
+    background-color: #FFF;
 }
 li {
     list-style-type: none;
@@ -13,57 +22,72 @@ li {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #2E2F42;
+    color: var(--navy-blue-color);
 }
 .logo-span {
-    color: #4D5AE5;
+    color: var(--iris-color);
+}
+.nav-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+    text-decoration: none;
+}
+
+.nav-text:hover,
+.nav-text:focus {
+    color: var(--ocean-color);
+}
+
+.address {
+    color: #434455;
+    text-decoration: none;
+    font-style: normal;
+
+}
+
+.address:hover,
+:focus {
+    color: var(--ocean-color);
+}
+.hero-image {
+    color: #FFF;
+    background-color: var(--navy-blue-color);
 }
 .title, .header-one {
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
 }
-.header-section {
-    font-weight: 700;
+.header-two {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
 }
-.header-card {
-    font-weight: 500;
+.header-three {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
 }
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    margin-top: 96px;
-    margin-bottom: 72px;
-}
 .button-text {
-    padding: 16px 32px;
-    gap: 10px;
-    background-color: #4D5AE5;
+    font-family: inherit;
+    background-color: var(--iris-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -71,42 +95,9 @@ li {
     border:none; 
 }
 .button-text:hover, .button-text:focus {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
-    font-weight: 600;
-    line-height: 19px;
-    color: #ffffff;
-    background-color: #4D5AE5;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
+    background-color: var(--iris-color);
+    
 }
-.navigation {
-    list-style-type: none;
-}
-
-.nav-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #2e2f42;
-}
-.nav-text:hover, .nav-text:focus {
-    color: #404BBF;
-}
-.address {
-    color: #434455;
-    text-decoration: none;
-}
-.address:hover, :focus {
-    color: #404BBF;
-} 
 .cards-team {
     width: 264px;
     height: 428;
@@ -116,20 +107,36 @@ li {
                 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-    list-style-type: none;
-}
-.cards {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 48px;
 }
 .card-items {
-    box-sizing: border-box;
     width: 360px;
     height: 420px;
     background-color: #fff;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--cornflower-color);
     text-align: center;
-    list-style-type: none;
-    display: inline-block;
+}
+.p-cards {
+    font-size: 16px;
+    color: var(--slate-color);
+}
+.link {
+ text-decoration: none;
+ color: inherit;
+}
+.foot {
+    color: var(--cornflower-color);
+    background-color: var(--navy-blue-color);
+}
+.logo-foot {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cloud-color);
+}
+.section-three {
+    background-color: var(--cloud-color);
 }
