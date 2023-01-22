@@ -109,7 +109,7 @@ li {
     border-radius: 4px;
     background-color: var(--cloud-color);
 }
-.buttons:hover, :focus {
+.buttons:hover, .buttons:focus {
     color: #FFF;
     background-color: var(--ocean-color);
 }
